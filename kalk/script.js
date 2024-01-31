@@ -20,7 +20,7 @@ function numberEvent(e) {
   if (e.target.tagName === 'BUTTON') {
     const currentText = bar.innerHTML;
     const buttonText = e.target.textContent;
-
+    // x
     // prvy char v stringu nesmie byt .
     if (buttonText === '.' && currentText.length === 0) {
       return;
