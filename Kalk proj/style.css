@@ -1,19 +1,73 @@
 /*** VSEOBECNE ***/
 body,
 html {
-  /* font-size: 2rem; */
-  height: 100%;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background-color: rgb(255, 255, 255); */
-}
-
-.calculator-container {
+  padding: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+
+/** NAVBAR **/
+.navbar {
+  background-color: green;
+  position: absolute;
+  font-family: 'Sixtyfour', sans-serif;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar p {
+  text-transform: capitalize;
+  font-size: 30px;
+  padding-left: 10px;
+  color: rgb(206, 50, 167);
+  letter-spacing: 2px;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+.links {
+  font-size: 24px;
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+
+  /* justify-content: flex-start;
+  padding-left: 25%; */
+
+  /* justify-content: center;
+  padding: 0; */
+  margin: 25px;
+}
+
+.links li {
+  margin-right: 50px;
+}
+
+.links a:link {
+  color: #ff9100;
+  text-decoration: none;
+  font-weight: bold;
+
+  transition: color 0.5s;
+}
+.links a:visited {
+  color: #ff9100;
+}
+.links a:hover {
+  color: #0011ff;
+}
+
+/** CALCULATOR **/
+
+.calculator {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 /** BAR **/
@@ -22,10 +76,12 @@ html {
   border-width: 5px;
   border-color: rgb(73, 175, 103);
   border-radius: 10px;
+
+  min-width: 380px;
+  height: 36.364px;
+
   display: flex;
   justify-content: center;
-  /* max-width: 1000px; */
-  height: 36.364px;
   margin-bottom: 5px;
   padding: 10px;
   font-size: 2rem;
@@ -34,7 +90,6 @@ html {
 /** BUTTONS **/
 .buttons {
   display: flex;
-  justify-content: center;
 }
 
 button {
@@ -66,7 +121,6 @@ button {
 
   display: flex;
   margin-left: 5px;
-  justify-content: center;
 }
 
 .math-operators {

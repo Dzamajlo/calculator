@@ -1,0 +1,169 @@
+/*** VSEOBECNE ***/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/** NAVBAR **/
+.navbar {
+  background-color: green;
+  position: absolute;
+  font-family: 'Sixtyfour', sans-serif;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar p {
+  text-transform: capitalize;
+  font-size: 30px;
+  padding-left: 10px;
+  color: rgb(206, 50, 167);
+  letter-spacing: 2px;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+.links {
+  font-size: 24px;
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+
+  /* justify-content: flex-start;
+  padding-left: 25%; */
+
+  /* justify-content: center;
+  padding: 0; */
+  margin: 25px;
+}
+
+.links li {
+  margin-right: 50px;
+}
+
+.links a:link {
+  color: #ff9100;
+  text-decoration: none;
+  font-weight: bold;
+
+  transition: color 0.5s;
+}
+.links a:visited {
+  color: #ff9100;
+}
+.links a:hover {
+  color: #0011ff;
+}
+
+/** CALCULATOR **/
+
+.calculator {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/** BAR **/
+.bar {
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(73, 175, 103);
+  border-radius: 10px;
+
+  min-width: 380px;
+  height: 36.364px;
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+/** BUTTONS **/
+.buttons {
+  display: flex;
+}
+
+button {
+  width: 70px;
+  height: 70px;
+  font-size: 2rem;
+  margin: 2px;
+}
+
+/*** CISELNIK ***/
+.numbers {
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(49, 122, 145);
+  border-radius: 10px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+/*** OPERATORY ***/
+.operator-container {
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(98, 51, 136);
+  border-radius: 10px;
+
+  margin-left: 5px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, auto);
+  gap: 5px;
+}
+
+.operator-container > div {
+  display: contents;
+}
+
+.operator-container .math-operators button:nth-child(1) {
+  grid-row: 1;
+}
+.operator-container .math-operators button:nth-child(2) {
+  grid-row: 2;
+}
+.operator-container .math-operators button:nth-child(3) {
+  grid-row: 3;
+}
+.operator-container .math-operators button:nth-child(4) {
+  grid-row: 4;
+}
+.operator-container .math-operators button:nth-child(5) {
+  grid-row: 5;
+}
+.operator-container .math-operators button:last-child {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.operator-container .special-operator button.clear {
+  grid-row: 1;
+  grid-column: 2;
+}
+.operator-container .special-operator button.delete {
+  grid-row: 2;
+  grid-column: 2;
+}
+.operator-container .result-operator button {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+/*** ZAUJIMAVE ***/
+.zatvorka {
+  grid-column: 3;
+}

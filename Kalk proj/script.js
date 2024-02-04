@@ -54,6 +54,11 @@ function mathEvent(e) {
     const currentText = bar.innerHTML;
     const lastChar = currentText.charAt(currentText.length - 1);
 
+    if (currentText === '' && e.target.textContent === '-') {
+      bar.innerHTML += e.target.textContent;
+      return;
+    }
+
     if (isNaN(lastChar) || lastChar === '') {
       return;
     }
