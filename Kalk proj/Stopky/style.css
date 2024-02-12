@@ -1,0 +1,172 @@
+/*** VSEOBECNE ***/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(247, 242, 242);
+}
+
+/** NAVBAR **/
+.navbar {
+  background-color: green;
+  position: absolute;
+  font-family: 'Sixtyfour', sans-serif;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.navbar p {
+  text-transform: capitalize;
+  font-size: 30px;
+  padding-left: 10px;
+  color: rgb(206, 50, 167);
+  letter-spacing: 2px;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+.links {
+  font-size: 24px;
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 25px;
+}
+.links li {
+  margin-right: 50px;
+}
+.links a:link {
+  color: #ff9100;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.5s;
+}
+.links a:visited {
+  color: #ff9100;
+}
+.links a:hover {
+  color: #0011ff;
+}
+
+/** STOPKY **/
+.stopky {
+  display: flex;
+  gap: 1rem;
+}
+.stopky-form {
+  font-family: Impact, Charcoal, sans-serif;
+  height: 5rem;
+  width: 2rem;
+  font-size: 40px;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  text-shadow: rgb(20, 169, 196) 2px 2px 2px;
+}
+.stopky-form h4 {
+  font-family: Exo, Charcoal, sans-serif;
+  height: 5rem;
+  width: 5rem;
+  font-size: 50px;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  letter-spacing: 5px;
+  color: rgb(136, 68, 68);
+  text-shadow: rgb(20, 169, 196) 2px 2px 2px;
+}
+
+.button-container {
+  display: flex;
+  /* border: solid red; */
+  /* font-size: 20px; */
+  width: 25rem;
+  height: 3rem;
+  position: relative;
+}
+
+button {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  font-weight: bold;
+  /* border-color: green; */
+}
+
+.start,
+.stop {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 10rem;
+}
+.medzicas,
+.restart {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 10rem;
+}
+
+.start {
+  border-color: green;
+  color: green;
+}
+.stop {
+  border-color: red;
+  color: red;
+}
+
+.invis {
+  visibility: hidden;
+}
+
+.medzicas-container {
+  font-family: Exo, Charcoal, sans-serif;
+  font-size: 45px;
+  justify-content: center;
+  color: rgb(136, 68, 68);
+  text-shadow: rgb(20, 169, 196) 2px 2px 2px;
+}
+
+.medzicas-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column; /* Stacks the h5 elements vertically */
+  align-items: center;
+}
+
+.medzicas-container h5 {
+  margin: 0.5rem 0; /* Adds some space between rows */
+  text-align: center;
+  color: rgb(73, 69, 69);
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* justify-content: center; */
+  flex: 1; /* Makes it fill the remaining space */
+  margin-top: 40vh; /* Adjust according to navbar height */
+}
+
+.medzicas1 {
+  opacity: 0.8;
+}
+.medzicas2 {
+  opacity: 0.6;
+}
+.medzicas3 {
+  opacity: 0.4;
+}
+.medzicas4 {
+  opacity: 0.2;
+}

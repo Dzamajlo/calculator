@@ -8,6 +8,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(247, 242, 242);
 }
 
 /** NAVBAR **/

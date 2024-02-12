@@ -4,6 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stopky</title>
+    <!-- font links -->
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet" />
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar">
+      <p>aplikácie:</p>
+      <ul class="links">
+        <li><a href="../index.html">Standardna Kalkulacka</a></li>
+        <li><a href="../Vedecka kal/vedecka_kal.html">Vedecka Kalkulacka</a></li>
+      </ul>
+    </nav>
+
+    <div class="center-container">
+      <div class="stopky">
+        <!-- minuty -->
+        <div class="stopky-form">
+          <div>
+            <h4 class="minuty">34</h4>
+          </div>
+        </div>
+        <div class="stopky-form">:</div>
+        <!-- sekundy -->
+        <div class="stopky-form">
+          <div>
+            <h4 class="sekundy">34</h4>
+          </div>
+        </div>
+        <div class="stopky-form">:</div>
+        <!-- stotiny -->
+        <div class="stopky-form">
+          <div>
+            <h4 class="stotiny">34</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button class="start">štart</button>
+        <button class="stop invis">stop</button>
+        <button class="medzicas">medzičas</button>
+        <button class="restart invis">reštart</button>
+      </div>
+
+      <div class="medzicas-container">
+        <h5 class="medzicas1">00 : 00 : 00</h5>
+        <h5 class="medzicas2">00 : 00 : 00</h5>
+        <h5 class="medzicas3">00 : 00 : 00</h5>
+        <h5 class="medzicas4">00 : 00 : 00</h5>
+      </div>
+    </div>
+
+    <!-- JS script -->
+    <script src="./script.js"></script>
+  </body>
 </html>
